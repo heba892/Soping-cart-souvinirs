@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.banner{
+    background-image: url(../src/assets/GI_636039228_KhanElKhalili_2C.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 99;
+}
+@media (max-width:590px){
+    .banner {
+        background-image: url(../src/assets/GI_636039228_KhanElKhalili_2C.jpg);
+        width: 100%;
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 99;
+
+    }
+} 
+.banner .content{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: white;
+}
+.banner .content .formargin{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    
+    }
+.banner .content a{
+    background-color: #dbaa09;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    color: white;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
